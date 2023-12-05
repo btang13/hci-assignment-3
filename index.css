@@ -10,6 +10,7 @@ body {
     margin: 50px;
     width: 100%;
     background-color: transparent;
+    padding-bottom: 30px;
 }
 
 p {
@@ -28,7 +29,7 @@ h2 {
     text-decoration: underline;
     color: #1A2660; 
     font-size: 36px;
-    margin: 0px 50px 0px 0px;
+    margin: 10px 50px 0px 0px;
 }
 
 /* whole nav bar */
@@ -94,6 +95,12 @@ h2 {
     width: 15%;
 }
 
-.iframe {
+.embed {
     display: block;
+    margin-top: -35px;
+}
+
+.graph-note {
+    font-style: italic;
+    font-size: 16px;
 }
