@@ -13,6 +13,7 @@
         <button class="tablink" onclick="opentab('contaminants')">Contaminants</button>
         <button class="tablink" onclick="opentab('census-data')">Census Data</button>
         <button class="tablink" onclick="opentab('water-data')">Water Data</button>
+        <button class="tablink" onclick="opentab('heatmap')">Correlation Heatmap</button>
     </div>
     <div id="introduction" class="tabcontent">
         <h1> Analyzing Maryland's Water Data </h1>
@@ -33,20 +34,22 @@
         </p>
         <h2> Why We Chose Maryland </h2>
         <p>
-            We chose Maryland as the main focus of this website for several reasons. First, Maryland is our current home
+            We chose <b>Maryland</b> as the main focus of this website for several reasons. First, Maryland is our
+            current home
             and we want to contribute meaningfully to the well-being of our state’s residents. Additionally, Maryland’s
-            diverse socio-economic landscape (cities, suburbs, rural areas) provides a robust dataset to explore. Our
-            goal with this website is to inform decision-making processes and start action towards sustainable water
+            <b>diverse socio-economic landscape</b> (cities, suburbs, rural areas) provides a robust dataset to explore.
+            Our goal with this website is to inform decision-making processes and start action towards sustainable water
             practices for all communities here in Maryland.
         </p>
         <h2> EPA Guidelines vs EWG Guidelines </h2>
         <p>
-            The EPA and EWG are two organizations that set guidelines for environmental health standards. The EPA, a
-            federal agency, sets national regulatory guidelines for pollutants and contaminants in air, land, and water.
-            The
-            Environmental Working Group, a nonprofit, often advocates for stricter guidelines than the EPA recommends to
-            reduce potential health risks. They also advocate for higher levels of scrutiny of outdated legislation and
-            harmful agricultural practices. Our website aims to further examine equitable access to clean water in
+            The <b>EPA</b> and <b>EWG</b> are two organizations that set guidelines for environmental health standards.
+            The EPA, a federal agency, sets national regulatory guidelines for pollutants and contaminants in air, land,
+            and water.
+            EWG often advocates for <b>stricter guidelines</b> than the EPA's set limits in order to
+            reduce potential health risks. They also advocate for <b>higher levels of scrutiny</b> of outdated
+            legislation and harmful agricultural practices. Our website aims to further examine equitable access to
+            clean water in
             Maryland.
         </p>
     </div>
@@ -92,25 +95,21 @@
             <img class="chemdrawing" src="images/barium.png" alt="Atomic infomation for Barium">
             <p>
                 Barium contamination in water typically occurs through natural processes. Surface runoff and
-                groundwater
-                seepage can lead to barium dissolving in the water, especially when the water flows past or seeps
-                through rocks containing barium. The solubility and toxicity of barium in water depend on the types
-                of
+                groundwater seepage can lead to barium dissolving in the water, especially when the water flows past or
+                seeps
+                through rocks containing barium. The solubility and toxicity of barium in water depend on the types of
                 barium compounds in the rocks and the water's alkalinity; for example, barium chloride is more
                 water-soluble and more dangerous than barium carbonate. Additionally, barium can enter water sources
-                from anthropogenic activities like oil and natural gas drilling, as well as from coal waste,
-                high-octane
+                from anthropogenic activities like oil and natural gas drilling, as well as from coal waste, high-octane
                 fuels, landfill leachate, and some de-icing products, although industrial pollution is less common
-                than
-                natural release from rocks.
+                than natural release from rocks.
             </p>
             <p>
                 Given the health risks associated with barium, particularly to the kidneys and cardiovascular
-                system,
-                the Environmental Working Group (EWG) has set a health benchmark of 0.7 parts per million (ppm) for
+                system, the Environmental Working Group (EWG) has set a health benchmark of 0.7 parts per million (ppm)
+                for
                 barium in drinking water, much lower than the federal legal limit of 2 ppm. This recommendation is
-                based
-                on research by the Agency for Toxic Substances and Disease Registry and the California Office of
+                based on research by the Agency for Toxic Substances and Disease Registry and the California Office of
                 Environmental Health Hazard Assessment, including a tenfold safety margin for children's health
             </p>
         </div>
@@ -119,8 +118,8 @@
             <img class="chemdrawing" src="images/nitrate.png" alt="Drawing of a nitrate ion">
             <p>
                 Nitrate is an ion that is a component of plant fertilizer used by farms and people with lawns. It ends
-                up in water
-                streams because of runoff, which ends up affecting the water supplies of mainly agricultural areas. The
+                up in water streams because of runoff, which ends up affecting the water supplies of mainly agricultural
+                areas. The
                 earliest known effects of high nitrate content in water included methemoglobinemia, also known as blue
                 baby syndrome, and the legal allowable limit for nitrate was set at 10 ppm in 1962 accordingly. However,
                 since that date, researchers in epidemiology suggest this number to still be far too high for safe
@@ -134,20 +133,149 @@
     <div id="census-data" class="tabcontent">
         <h1> Analyzing Maryland's Water Data </h1>
         <p>
-            This visualization shows median income by total population, with each dot representing a zip code, and
+            The visualization below shows median income by total population, with each dot representing a ZIP code, and
             colored by the majority race in each area (according to census.gov). It offers several interesting insights
-            into the socio-economic and demographic landscape. First, the data suggests a correlation between higher
-            incomes and smaller zip code populations. For example, if we look at the cluster of dots on the right end of
-            the graph, we can see that the top 5 zip codes with highest median household income all contain less than
-            10,000 people. Additionally, we can see that all higher-income zip codes are predominately white. This
+            into the socio-economic and demographic landscape.
+        </p>
+        <p class="graph-note">
+            <b>Note:</b> clicking on any entry in the legend on the right to remove those entries from the graph.
+        </p>
+        <embed style="border: none;" src="graphs/income_vs_total_population.html" dpi="300" width="80%"
+            height="800px" />
+        <h2>Key Takeaways</h2>
+        <p>
+            First, the data suggests a <b>weak correlation</b> between <b>higher incomes</b> and <b>lower
+                populations</b>.
+            For example, if we look at the cluster of dots on the right end of
+            the graph, we can see that the top 5 ZIP codes with highest median household income all contain <b>less than
+                10,000 people</b>.
+            Additionally, we can see that all higher-income ZIP codes are <b>predominately white</b>. This
             racial correlation may hint at socio-economic disparities that exist and raise questions about equity/access
-            to resources. Furthermore, there seems to be a concentration of majority hispanic zip codes (in green)
+            to resources. Furthermore, there seems to be a concentration of majority Hispanic ZIP codes (green dots)
             around the same levels of median household income.
         </p>
-        <embed style="border: none;" src="graphs/income_vs_total_population.html" dpi="300" width="80%" height="800px" />
     </div>
     <div id="water-data" class="tabcontent">
-
+        <h1> Analyzing Maryland's Water Data </h1>
+        <h2> Water Contamination Graphs </h2>
+        <p>
+            Below will be several graphs pertaining to water contamination data with respect to median income or
+            population and
+            classified by ZIP code.
+        </p>
+        <p class="graph-note">
+            <b>Note:</b> ZIP codes can be serviced by multiple water providers. The <b>major</b> service provider in a
+            ZIP code is the one that services the highest population of people.
+        </p>
+        <p>
+            Click on each dropdown to view the graph.
+        </p>
+        <button type="button" class="collapsible">Median Income vs. Median Number of Contaminants <b>By Major Utility
+                Provider</b></button>
+        <div class="content">
+            <p class="graph-note">
+                <b>Note:</b> clicking on any entry in the legend on the right to remove those entries from the graph.
+            </p>
+            <embed style="border: none;" src="graphs/income_vs_majority_utility.html" dpi="300" width="80%"
+                height="800px" />
+        </div>
+        <button type="button" class="collapsible">Median Income vs. Median Number of Contaminants
+            <b>Overall</b></button>
+        <div class="content">
+            <p class="graph-note">
+                <b>Note:</b> clicking on any entry in the legend on the right to remove those entries from the graph.
+            </p>
+            <embed style="border: none;" src="graphs/income_vs_median_utility.html" dpi="300" width="80%"
+                height="800px" />
+        </div>
+        <button type="button" class="collapsible">Median Income vs. Mean Number of Contaminants <b>Overall</b></button>
+        <div class="content">
+            <p class="graph-note">
+                <b>Note:</b> clicking on any entry in the legend on the right to remove those entries from the graph.
+            </p>
+            <embed style="border: none;" src="graphs/income_vs_mean_utility.html" dpi="300" width="80%"
+                height="800px" />
+        </div>
+        <button type="button" class="collapsible">Population vs. Median Number of Contaminants <b>By Major Utility
+                Provider</b></button>
+        <div class="content">
+            <p class="graph-note">
+                <b>Note:</b> clicking on any entry in the legend on the right to remove those entries from the graph.
+            </p>
+            <embed style="border: none;" src="graphs/population_vs_majority_contams.html" dpi="300" width="80%"
+                height="800px" />
+        </div>
+        <h2>Key Takeaways</h2>
+        <p>
+            Here we have representations of contamination data across three distinct graphs to provide a comprehensive
+            view of
+            the <b>relationship</b> between <b>income levels and water quality</b> in various ZIP codes. We chose to
+            look at the majority
+            provider for each zip code, and the mean and median number of contaminants by providers. For example, in ZIP
+            code <b>21211</b>, <b>1.6 million people</b> are served by <b>the City of Baltimore</b>, <b>575</b> by
+            <b>Keswick Multi-Care Center</b>, <b>200</b> by
+            <b>Apostolic Towers</b>, and <b>162</b> by the Neighborhoods at <b>St. Elizabeth</b>. So for 21211, the
+            majority graph would only
+            show the contaminants detected in City of Baltimore utilities.
+        </p>
+        <p>
+            In the <b>majority provider graph</b>, which focuses only on the utility covering the majority of a ZIP
+            code, a trend
+            emerges - <b>ZIP codes with higher median household incomes tend to experience fewer contaminants</b>, with
+            the <b>highest
+                number detected in ZIP codes with a median household income between $50,000 - $150,000</b>. Looking at
+            the mean and
+            median graphs, a similar, but more subtle pattern emerges, indicating the highest level of contaminants in a
+            similar income bracket.
+        </p>
+        <p>
+            We also see ZIP codes with <b>median household incomes between $200-250k</b> have water providers with the
+            <b>least
+                amount of contaminants</b>. These graphs bring up questions around the correlation between
+            socio-economic factors
+            and water quality, and indicating a need for improvement in these areas
+        </p>
+    </div>
+    <div id="heatmap" class="tabcontent">
+        <h2>
+            Correlation Heatmap:
+        </h2>
+        <p style="margin-bottom: -50px;">
+            Below is a table containing the correlations between the figures on the left with the variables on top.
+        </p>
+        <embed style="border: none;" src="graphs/correlation_heatmap.html" dpi="300" width="80%" height="800px" />
+        <h2 style="margin-top: -50px;">Key Takeaways</h2>
+        <p>
+            In terms of <b>median household income</b>, we can see the variables with the highest positive correlations are
+            percent non-Hispanic Asian, median age, and percent non-Hispanic white. This suggests areas with higher
+            median household incomes tend to have a higher percentage of non-Hispanic Asian residents, older median age,
+            and larger non-Hispanic white populations. Conversely, there is a negative correlation between percent
+            non-Hispanic black and percent non-Hispanic American Indian.
+        </p>
+        <p>
+            In the context of <b>median age</b>, the largest positive correlations were between percent non-Hispanic white and
+            median household income, suggesting areas with older populations and with larger non-Hispanic white
+            residents tend to have higher median household incomes. On the other hand, we see a negative association
+            between median age and percent Hispanic, total population, and percent non-Hispanic black.
+        </p>
+        <p>
+            For <b>contaminants in the majority providers</b>, we see a strongest positive correlation with percent
+            non-Hispanic white and total population. We see the strongest negative correlations with percent
+            non-Hispanic Asian and median household income. Interestingly, for mean and median number of contaminants,
+            we see different patterns where the strongest positive correlations are with total population and percent
+            non-Hispanic Asian and the strongest negative correlations are with median age, percent non-Hispanic
+            American Indian, and percent non-Hispanic black.
+        </p>
+        <p>
+            This heatmap provides insights into the relationship between demographic factors and water quality
+            variables. The positive correlations between median household income and factors such as non-Hispanic Asian,
+            median age, and percent non-Hispanic white indicate more complex socio-economic factors. Additionally,
+            negative correlations with percent non-Hispanic black suggests disparities that should have closer
+            examination. We also see associations between age demographics, income levels, and racial compositions as
+            well as how these relate to various water quality variables. In the future, it would also be interesting to
+            look into additional water quality variables such as ph levels, presence of heavy metals, bacterial
+            contaminations, residual chlorine, etc.
+        </p>
     </div>
     <script src="index.js"></script>
 </body>
