@@ -8,23 +8,148 @@
 </head>
 
 <body>
-    <section id="introduction">
+    <div id="navbar">
+        <button class="tablink" onclick="opentab('introduction')" id="defaultOpen">Introduction</button>
+        <button class="tablink" onclick="opentab('contaminants')">Contaminants</button>
+        <button class="tablink" onclick="opentab('census-data')">Census Data</button>
+        <button class="tablink" onclick="opentab('water-data')">Water Data</button>
+    </div>
+    <div id="introduction" class="tabcontent">
         <h1> Analyzing Maryland's Water Data </h1>
-        <!--<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~chris/1638.embed" height="525" width="100%"></iframe>-->
-        <!--<div class="graph">
-        <iframe src="graphs/population_vs_majority_contams.html" scrolling="no" style="border:none;" seamless="seamless"
-            height="525" width="100%"></iframe>
-        </div>-->
+        <h2> Introduction </h2>
         <p>
-            The <b>Environmental Working Group</b> (EWG) tracks <b>14 different contaminants</b> found in the water supply in nearly every ZIP code across the US.
-            They claim that the legal limits for many contaminants set by the United States Environmental Protection Agency (EPA) are <b>too high</b> for safe water.
-            Using data from EWG’s contaminants database and census.gov, we present a visual narrative that explores the relationship between water quality
-            and the socio-economic and racial divisions across Maryland’s zip codes. 
-            Analyzing and visualizing water quality data, particularly in the context of income-based demographics and other socio-economic factors, is 
-            important to bring transparency into the realm of environmental health and help create a deeper understanding of the relationship between health 
+            The <b>Environmental Working Group</b> (EWG) tracks <b>14 different contaminants</b> found in the water
+            supply in nearly every ZIP code across the US.
+            They claim that the legal limits for many contaminants set by the United States Environmental Protection
+            Agency (EPA) are <b>too high</b> for safe water.
+            Using data from EWG’s contaminants database and census.gov, we present a visual narrative that explores the
+            relationship between water quality
+            and the socio-economic and racial divisions across Maryland’s zip codes.
+            Analyzing and visualizing water quality data, particularly in the context of income-based demographics and
+            other socio-economic factors, is
+            important to bring transparency into the realm of environmental health and help create a deeper
+            understanding of the relationship between health
             and socio-economic factors.
         </p>
-    </section>
+        <h2> Why We Chose Maryland </h2>
+        <p>
+            We chose Maryland as the main focus of this website for several reasons. First, Maryland is our current home
+            and we want to contribute meaningfully to the well-being of our state’s residents. Additionally, Maryland’s
+            diverse socio-economic landscape (cities, suburbs, rural areas) provides a robust dataset to explore. Our
+            goal with this website is to inform decision-making processes and start action towards sustainable water
+            practices for all communities here in Maryland.
+        </p>
+        <h2> EPA Guidelines vs EWG Guidelines </h2>
+        <p>
+            The EPA and EWG are two organizations that set guidelines for environmental health standards. The EPA, a
+            federal agency, sets national regulatory guidelines for pollutants and contaminants in air, land, and water.
+            The
+            Environmental Working Group, a nonprofit, often advocates for stricter guidelines than the EPA recommends to
+            reduce potential health risks. They also advocate for higher levels of scrutiny of outdated legislation and
+            harmful agricultural practices. Our website aims to further examine equitable access to clean water in
+            Maryland.
+        </p>
+    </div>
+    <div id="contaminants" class="tabcontent">
+        <h1> Analyzing Maryland's Water Data </h1>
+        <h2>
+            Some Important Contaminants
+        </h2>
+        <p>
+            We have chosen to focus our attention on 4 contaminants: Nitrate, Barium, Atrazine and Bromodichloromethane.
+            These contaminants were chosen based on their prevalence and potential impact on public health. Click on
+            each one to learn about its effect in water.
+        </p>
+        <button type="button" class="collapsible">Atrazine</button>
+        <div class="content">
+            <img class="chemdrawing" src="images/atrazine.png" alt="Drawing of an Atrazine molecule">
+            <p>
+                Atrazine is a widely used herbicide in agriculture, particularly for crops like sugar canes, corn, and
+                other industrial crops. When it rains, atrazine can leach into streams, rivers, and groundwater. This
+                herbicide is known for its potential endocrine-disrupting effects and has been linked to reproductive
+                and developmental issues in humans and wildlife. Some studies also suggest a possible connection to
+                certain cancers. The EPA has set the maximum contaminant level
+                for atrazine in drinking water at 3 parts per billion (ppb), but groups like the Environmental Working
+                Group (EWG) argue for stricter limits due to its potential health risks.
+            </p>
+        </div>
+        <button type="button" class="collapsible">Bromodichloromethane</button>
+        <div class="content">
+            <img class="chemdrawing" src="images/bromodichloromethane.png"
+                alt="Drawing of a Bromodichloromethane molecule">
+            <p>
+                Bromodichloromethane is often formed as a byproduct of when chlorine is used to treat drinking water.
+                The EPA currently has no guidelines regarding amounts of bromodichloromethane in water; however, the EWG
+                recommends a guideline of 0.06 ppb due to health concerns related to cancer, harm to reproduction and
+                child development, and changes to fetal growth and development. The EWG guideline is based on a 2018
+                guideline proposed by the California Office of Environmental Health Hazard Assessment.
+                Bromodichloromethane in tap water above this guideline has been detected by EWG in 48 states and being
+                served to 237 million people.
+            </p>
+        </div>
+        <button type="button" class="collapsible">Barium</button>
+        <div class="content">
+            <img class="chemdrawing" src="images/barium.png" alt="Atomic infomation for Barium">
+            <p>
+                Barium contamination in water typically occurs through natural processes. Surface runoff and
+                groundwater
+                seepage can lead to barium dissolving in the water, especially when the water flows past or seeps
+                through rocks containing barium. The solubility and toxicity of barium in water depend on the types
+                of
+                barium compounds in the rocks and the water's alkalinity; for example, barium chloride is more
+                water-soluble and more dangerous than barium carbonate. Additionally, barium can enter water sources
+                from anthropogenic activities like oil and natural gas drilling, as well as from coal waste,
+                high-octane
+                fuels, landfill leachate, and some de-icing products, although industrial pollution is less common
+                than
+                natural release from rocks.
+            </p>
+            <p>
+                Given the health risks associated with barium, particularly to the kidneys and cardiovascular
+                system,
+                the Environmental Working Group (EWG) has set a health benchmark of 0.7 parts per million (ppm) for
+                barium in drinking water, much lower than the federal legal limit of 2 ppm. This recommendation is
+                based
+                on research by the Agency for Toxic Substances and Disease Registry and the California Office of
+                Environmental Health Hazard Assessment, including a tenfold safety margin for children's health
+            </p>
+        </div>
+        <button type="button" class="collapsible">Nitrate</button>
+        <div class="content">
+            <img class="chemdrawing" src="images/nitrate.png" alt="Drawing of a nitrate ion">
+            <p>
+                Nitrate is an ion that is a component of plant fertilizer used by farms and people with lawns. It ends
+                up in water
+                streams because of runoff, which ends up affecting the water supplies of mainly agricultural areas. The
+                earliest known effects of high nitrate content in water included methemoglobinemia, also known as blue
+                baby syndrome, and the legal allowable limit for nitrate was set at 10 ppm in 1962 accordingly. However,
+                since that date, researchers in epidemiology suggest this number to still be far too high for safe
+                water. Nitrate is linked to higher risk of numerous cancers in multiple studies, as well as subclinical
+                hyperthyroidism in women. Nitrate’s cousin nitrite is another contaminant, albeit an even more toxic
+                one. For the EWG, the safe limit of nitrate content sits at around 0.14 ppm, which is 140 times lower
+                than the legal limit.
+            </p>
+        </div>
+    </div>
+    <div id="census-data" class="tabcontent">
+        <h1> Analyzing Maryland's Water Data </h1>
+        <p>
+            This visualization shows median income by total population, with each dot representing a zip code, and
+            colored by the majority race in each area (according to census.gov). It offers several interesting insights
+            into the socio-economic and demographic landscape. First, the data suggests a correlation between higher
+            incomes and smaller zip code populations. For example, if we look at the cluster of dots on the right end of
+            the graph, we can see that the top 5 zip codes with highest median household income all contain less than
+            10,000 people. Additionally, we can see that all higher-income zip codes are predominately white. This
+            racial correlation may hint at socio-economic disparities that exist and raise questions about equity/access
+            to resources. Furthermore, there seems to be a concentration of majority hispanic zip codes (in green)
+            around the same levels of median household income.
+        </p>
+        <embed style="border: none;" src="graphs/income_vs_total_population.html" dpi="300" width="80%" height="800px" />
+    </div>
+    <div id="water-data" class="tabcontent">
+
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
