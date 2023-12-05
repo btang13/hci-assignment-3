@@ -16,7 +16,7 @@ p {
     font-size: 22px;
     width: 80%;
     color: #1A2660;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 h1 {
@@ -67,6 +67,8 @@ h2 {
     text-align: center;
     outline: none;
     border-radius: 30px;
+    font-size: 25px;
+    margin: 15px 0px 0px 0px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -81,4 +83,13 @@ h2 {
     display: none;
     overflow: hidden;
     background-color: transparent;
+    font-size: 22px;
+    width: 100%;
+}
+
+.chemdrawing {
+    display:block;
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 20%;
 }
