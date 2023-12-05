@@ -7,13 +7,42 @@ html {
   }
 
 body {
-    margin: 30px;
-    width: 80%;
-    background-color: #D9D9D9;
+    margin: 50px;
+    width: 100%;
+    background-color: transparent;
     font-size: 22px;
+}
+
+p {
+    width: 80%;
 }
 
 h1 {
     color: #44B1FF;
     font-size: 44px;
 }
+
+.collapsible {
+    background-color: #FEFAFA;
+    font: inherit;
+    color: #1A2660;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    text-align: center;
+    outline: none;
+    border-radius: 30px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #EEEEEE;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
