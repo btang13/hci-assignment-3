@@ -8,13 +8,14 @@
 </head>
 
 <body>
-    <section id="introduction">
+    <div id="navbar">
+        <button class="tablink" onclick="opentab('introduction')" id="defaultOpen">Introduction</button>
+        <button class="tablink" onclick="opentab('contaminants')">Contaminants</button>
+        <button class="tablink" onclick="opentab('census-data')">Census Data</button>
+    </div>
+    <div id="introduction" class="tabcontent">
         <h1> Analyzing Maryland's Water Data </h1>
-        <!--<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~chris/1638.embed" height="525" width="100%"></iframe>-->
-        <!--<div class="graph">
-        <iframe src="graphs/population_vs_majority_contams.html" scrolling="no" style="border:none;" seamless="seamless"
-            height="525" width="100%"></iframe>
-        </div>-->
+        <h2> Introduction </h2>
         <p>
             The <b>Environmental Working Group</b> (EWG) tracks <b>14 different contaminants</b> found in the water
             supply in nearly every ZIP code across the US.
@@ -29,11 +30,44 @@
             understanding of the relationship between health
             and socio-economic factors.
         </p>
-        <button type="button" class="collapsible">Learn about the Contaminants</button>
-        <div class="content">
-            <p>Below are 4 major contaminants and why they are harmful.</p>
-        </div>
-    </section>
+        <h2> Why We Chose Maryland </h2>
+        <p>
+            We chose Maryland as the main focus of this website for several reasons. First, Maryland is our current home
+            and we want to contribute meaningfully to the well-being of our state’s residents. Additionally, Maryland’s
+            diverse socio-economic landscape (cities, suburbs, rural areas) provides a robust dataset to explore. Our
+            goal with this website is to inform decision-making processes and start action towards sustainable water
+            practices for all communities here in Maryland.
+        </p>
+        <h2> EPA Guidelines vs EWG Guidelines </h2>
+        <p>
+            The EPA and EWG are two organizations that set guidelines for environmental health standards. The EPA, a
+            federal agency, sets national regulatory guidelines for pollutants and contaminants in air, land, and water.
+            The
+            Environmental Working Group, a nonprofit, often advocates for stricter guidelines than the EPA recommends to
+            reduce potential health risks. They also advocate for higher levels of scrutiny of outdated legislation and
+            harmful agricultural practices. Our website aims to further examine equitable access to clean water in
+            Maryland.
+        </p>
+    </div>
+    <div id="contaminants" class="tabcontent">
+        <p>
+            We have chosen to focus our attention on 4 contaminants: Nitrate, Barium, Atrazine and Bromodichloromethane.
+            These contaminants were chosen based on their prevalence and potential impact on public health.
+        </p>
+    </div>
+    <div id="census-data" class="tabcontent">
+        <p>
+            This visualization shows median income by total population, with each dot representing a zip code, and
+            colored by the majority race in each area (according to census.gov). It offers several interesting insights
+            into the socio-economic and demographic landscape. First, the data suggests a correlation between higher
+            incomes and smaller zip code populations. For example, if we look at the cluster of dots on the right end of
+            the graph, we can see that the top 5 zip codes with highest median household income all contain less than
+            10,000 people. Additionally, we can see that all higher-income zip codes are predominately white. This
+            racial correlation may hint at socio-economic disparities that exist and raise questions about equity/access
+            to resources. Furthermore, there seems to be a concentration of majority hispanic zip codes (in green)
+            around the same levels of median household income.
+        </p>
+    </div>
     <script src="index.js"></script>
 </body>
 
