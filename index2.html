@@ -4,78 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Quality in Maryland: A Socio-Economic Analysis</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #3298dc;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #2980b9 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e9f5f5;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        .introduction, .section {
-            padding: 15px 0;
-            text-align: justify;
-        }
-        .section-title {
-            color: #333;
-            font-size: 27px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        footer {
-            padding: 20px;
-            margin-top: 20px;
-            color: #ffffff;
-            background-color: #333;
-            text-align: center;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="index.css" rel="stylesheet" />
+    </head>
 <body>
     <header>
         <div class="container">
@@ -105,9 +38,42 @@
             <p>We chose Maryland as the main focus of this website for several reasons. First, Maryland is our current home and we want to contribute meaningfully to the well-being of our state’s residents. Additionally, Maryland’s diverse socio-economic landscape (cities, suburbs, rural areas) provides a robust dataset to explore. Our goal with this website is to inform decision-making processes and start action towards sustainable water practices for all communities here in Maryland.</p>
         </section>
 
-        <section class="contaminants" id="why-maryland">
-            <h2 class="section-title">Why We Chose Maryland</h2>
-            <p>We chose Maryland as the main focus of this website for several reasons. First, Maryland is our current home and we want to contribute meaningfully to the well-being of our state’s residents. Additionally, Maryland’s diverse socio-economic landscape (cities, suburbs, rural areas) provides a robust dataset to explore. Our goal with this website is to inform decision-making processes and start action towards sustainable water practices for all communities here in Maryland.</p>
+        <section class="section" id="guidelines">
+            <h2 class="section-title">EPA Guidelines vs EWG Guidelines</h2>
+            <p>The EPA and EWG are two organizations that set guidelines for environmental health standards. The EPA, a federal agency, sets national regulatory guidelines for pollutants and contaminants in air, land, and water. The Environmental Working Group, a nonprofit, often advocates for stricter guidelines than the EPA recommends to reduce potential health risks. They also advocate for higher levels of scrutiny of outdated legislation and harmful agricultural practices. Our website aims to further examine equitable access to clean water in Maryland.</p>
+        </section>
+
+        <section class="section" id="contaminants">
+            <h2 class="section-title">Contaminants</h2>
+            <p>We have chosen to focus our attention on 3 contaminants: Nitrate, Barium, and Bromodichloromethane. These contaminants were chosen based on their prevalence and potential impact on public health.</p>
+            
+            <!-- Bromodichloromethane Subsection -->
+            <section class="contaminant-detail" id="bromodichloromethane">
+                <h3>Bromodichloromethane</h3>
+                <p>Bromodichloromethane is often formed as a byproduct of when chlorine is used to treat drinking water. The EPA currently has no guidelines regarding amounts of bromodichloromethane in water; however, the EWG recommends a guideline of 0.06 ppb due to health concerns related to cancer, harm to reproduction and child development, and changes to fetal growth and development. The EWG guideline is based on a 2018 guideline proposed by the California Office of Environmental Health Hazard Assessment. Bromodichloromethane in tap water above this guideline has been detected by EWG in 48 states and being served to 237 million people.</p>
+            </section>
+
+            <!-- Barium Subsection -->
+            <section class="contaminant-detail" id="barium">
+                <h3>Barium</h3>
+                <p>Barium contamination in water typically occurs through natural processes. Surface runoff and groundwater seepage can lead to barium dissolving in the water, especially when the water flows past or seeps through rocks containing barium. The solubility and toxicity of barium in water depend on the types of barium compounds in the rocks and the water's alkalinity; for example, barium chloride is more water-soluble and more dangerous than barium carbonate. Additionally, barium can enter water sources from anthropogenic activities like oil and natural gas drilling, as well as from coal waste, high-octane fuels, landfill leachate, and some de-icing products, although industrial pollution is less common than natural release from rocks.
+
+                    Given the health risks associated with barium, particularly to the kidneys and cardiovascular system, the Environmental Working Group (EWG) has set a health benchmark of 0.7 parts per million (ppm) for barium in drinking water, much lower than the federal legal limit of 2 ppm. This recommendation is based on research by the Agency for Toxic Substances and Disease Registry and the California Office of Environmental Health Hazard Assessment, including a tenfold safety margin for children's health
+                    </p>
+            </section>
+
+            <!-- Nitrate Subsection -->
+            <section class="contaminant-detail" id="nitrate">
+                <h3>Nitrate</h3>
+                <p>Nitrate is a component of plant fertilizer used by farms and people with lawns. It ends up in water streams because of runoff, which ends up affecting the water supplies of mainly agricultural areas. The earliest known effects of high nitrate content in water included methemoglobinemia, also known as blue baby syndrome, and the legal allowable limit for nitrate was set at 10 ppm in 1962 accordingly. However, since that date, researchers in epidemiology suggest this number to still be far too high for safe water. Nitrate is linked to higher risk of numerous cancers in multiple studies, as well as subclinical hyperthyroidism in women. Nitrate’s cousin nitrite is another contaminant, albeit an even more toxic one. For the EWG, the safe limit of nitrate content sits at around 0.14 ppm, which is 140 times lower than the legal limit.</p>
+            </section>
+
+            <!-- Atrazine Subsection -->
+            <section class="contaminant-detail" id="atrazine">
+                <h3>Atrazine</h3>
+                <p>Atrazine is a widely used herbicide in agriculture, particularly for crops like sugar canes, corn, and other industrial crops. When it rains, atrazine can leach into streams, rivers, and groundwater. This herbicide is known for its potential endocrine-disrupting effects and has been linked to reproductive and developmental issues in humans and wildlife. Some studies also suggest a possible connection to certain cancers. The U.S. Environmental Protection Agency (EPA) has set the maximum contaminant level for atrazine in drinking water at 3 parts per billion (ppb), but groups like the Environmental Working Group (EWG) argue for stricter limits due to its potential health risks.</p>
+            </section>
+
         </section>
 
         <!-- Additional sections can be added here following the same structure -->
