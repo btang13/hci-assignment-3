@@ -14,9 +14,14 @@
         <button class="tablink" onclick="opentab('census-data')">Census Data</button>
         <button class="tablink" onclick="opentab('water-data')">Water Data</button>
         <button class="tablink" onclick="opentab('heatmap')">Correlation Heatmap</button>
+        <button class="tablink" onclick="opentab('references')">References</button>
     </div>
     <div id="introduction" class="tabcontent">
         <h1> Analyzing Maryland's Water Data </h1>
+        <p style="font-size: 28px; font-style: italic;">
+            Brandon Tang, Claire Jung, Natalie Wang, Sai Earla
+        </p>
+
         <h2> Introduction </h2>
         <p>
             The <b>Environmental Working Group</b> (EWG) tracks <b>14 different contaminants</b> found in the water
@@ -67,12 +72,12 @@
         <div class="content">
             <img class="chemdrawing" src="images/atrazine.png" alt="Drawing of an Atrazine molecule">
             <p>
-                Atrazine is a widely used herbicide in agriculture, particularly for crops like sugar canes, corn, and
+                <b>Atrazine</b> is a widely used herbicide in agriculture, particularly for crops like sugar canes, corn, and
                 other industrial crops. When it rains, atrazine can leach into streams, rivers, and groundwater. This
                 herbicide is known for its potential endocrine-disrupting effects and has been linked to reproductive
                 and developmental issues in humans and wildlife. Some studies also suggest a possible connection to
                 certain cancers. The EPA has set the maximum contaminant level
-                for atrazine in drinking water at 3 parts per billion (ppb), but groups like the Environmental Working
+                for atrazine in drinking water at <b>3 parts per billion (ppb)</b>, but groups like the Environmental Working
                 Group (EWG) argue for stricter limits due to its potential health risks.
             </p>
         </div>
@@ -81,9 +86,9 @@
             <img class="chemdrawing" src="images/bromodichloromethane.png"
                 alt="Drawing of a Bromodichloromethane molecule">
             <p>
-                Bromodichloromethane is often formed as a byproduct of when chlorine is used to treat drinking water.
-                The EPA currently has no guidelines regarding amounts of bromodichloromethane in water; however, the EWG
-                recommends a guideline of 0.06 ppb due to health concerns related to cancer, harm to reproduction and
+                <b>Bromodichloromethane</b> is often formed as a byproduct of when chlorine is used to treat drinking water.
+                The <b>EPA currently has no guidelines</b> regarding amounts of bromodichloromethane in water; however, <b>the EWG
+                recommends a guideline of 0.06 ppb</b> due to health concerns related to cancer, harm to reproduction and
                 child development, and changes to fetal growth and development. The EWG guideline is based on a 2018
                 guideline proposed by the California Office of Environmental Health Hazard Assessment.
                 Bromodichloromethane in tap water above this guideline has been detected by EWG in 48 states and being
@@ -94,9 +99,8 @@
         <div class="content">
             <img class="chemdrawing" src="images/barium.png" alt="Atomic infomation for Barium">
             <p>
-                Barium contamination in water typically occurs through natural processes. Surface runoff and
-                groundwater seepage can lead to barium dissolving in the water, especially when the water flows past or
-                seeps
+                <b>Barium</b> contamination in water typically occurs through natural processes. Surface runoff and
+                groundwater seepage can lead to barium dissolving in the water, especially when the water flows past or seeps
                 through rocks containing barium. The solubility and toxicity of barium in water depend on the types of
                 barium compounds in the rocks and the water's alkalinity; for example, barium chloride is more
                 water-soluble and more dangerous than barium carbonate. Additionally, barium can enter water sources
@@ -106,9 +110,8 @@
             </p>
             <p>
                 Given the health risks associated with barium, particularly to the kidneys and cardiovascular
-                system, the Environmental Working Group (EWG) has set a health benchmark of 0.7 parts per million (ppm)
-                for
-                barium in drinking water, much lower than the federal legal limit of 2 ppm. This recommendation is
+                system, the EWG has set a health benchmark of <b>0.7 parts per million </b>(ppm) for
+                barium in drinking water, <b>much lower than the federal legal limit of 2 ppm</b>. This recommendation is
                 based on research by the Agency for Toxic Substances and Disease Registry and the California Office of
                 Environmental Health Hazard Assessment, including a tenfold safety margin for children's health
             </p>
@@ -117,16 +120,15 @@
         <div class="content">
             <img class="chemdrawing" src="images/nitrate.png" alt="Drawing of a nitrate ion">
             <p>
-                Nitrate is an ion that is a component of plant fertilizer used by farms and people with lawns. It ends
-                up in water streams because of runoff, which ends up affecting the water supplies of mainly agricultural
-                areas. The
-                earliest known effects of high nitrate content in water included methemoglobinemia, also known as blue
-                baby syndrome, and the legal allowable limit for nitrate was set at 10 ppm in 1962 accordingly. However,
+                <b>Nitrate</b> is an ion that is a component of plant fertilizer used by farms and people with lawns. It ends
+                up in water streams because of runoff, which ends up affecting the water supplies of mainly agricultural areas.
+                The earliest known effects of high nitrate content in water included methemoglobinemia, also known as blue
+                baby syndrome, and the <b>legal allowable limit for nitrate</b> was set at <b>10 ppm</b> in 1962 accordingly. However,
                 since that date, researchers in epidemiology suggest this number to still be far too high for safe
                 water. Nitrate is linked to higher risk of numerous cancers in multiple studies, as well as subclinical
                 hyperthyroidism in women. Nitrate’s cousin nitrite is another contaminant, albeit an even more toxic
-                one. For the EWG, the safe limit of nitrate content sits at around 0.14 ppm, which is 140 times lower
-                than the legal limit.
+                one. For the EWG, the <b>safe limit of nitrate content</b> sits at around <b>0.14 ppm</b>, which is <b>140 times lower
+                than the legal limit</b>.
             </p>
         </div>
     </div>
@@ -198,7 +200,7 @@
         </div>
         <button type="button" class="collapsible">Population vs. Number of <b>Contaminants at Unsafe Levels</b></button>
         <div class="content">
-            <p class="graph-note" style="margin-bottom: -20px;">
+            <p class="graph-note">
                 <b>Note:</b> clicking on any entry in the legend on the right to remove those entries from the graph.
             </p>
             <embed style="border: none;" src="graphs/population_vs_majority_contams.html" dpi="300" width="80%"
@@ -206,10 +208,8 @@
         </div>
         <h2 style="margin-top: 30px;">Key Takeaways</h2>
         <p>
-            Here we have representations of contamination data across three distinct graphs to provide a comprehensive
-            view of
-            the <b>relationship</b> between <b>income levels and water quality</b> in various ZIP codes. We chose to
-            look at the majority
+            Here we have representations of contamination data across three distinct graphs to provide a comprehensive view of
+            the <b>relationship</b> between <b>income levels and water quality</b> in various ZIP codes. We chose to look at the majority
             provider for each zip code, and the mean and median number of contaminants by providers. For example, in ZIP
             code <b>21211</b>, <b>1.6 million people</b> are served by <b>the City of Baltimore</b>, <b>575</b> by
             <b>Keswick Multi-Care Center</b>, <b>200</b> by
@@ -219,12 +219,9 @@
         </p>
         <p>
             In the <b>majority provider graph</b>, which focuses only on the utility covering the majority of a ZIP
-            code, a trend
-            emerges - <b>ZIP codes with higher median household incomes tend to experience fewer contaminants</b>, with
-            the <b>highest
-                number detected in ZIP codes with a median household income between $50,000 - $150,000</b>. Looking at
-            the mean and
-            median graphs, a similar, but more subtle pattern emerges, indicating the highest level of contaminants in a
+            code, a trend emerges - <b>ZIP codes with higher median household incomes tend to experience fewer contaminants</b>, with
+            the <b>highest number detected in ZIP codes with a median household income between $50,000 - $150,000</b>. Looking at
+            the mean and median graphs, a similar, but more subtle pattern emerges, indicating the highest level of contaminants in a
             similar income bracket.
         </p>
         <p>
@@ -236,7 +233,7 @@
         </p>
     </div>
     <div id="heatmap" class="tabcontent">
-        <h2>
+        <h2 style="margin-top: 30px;">
             Correlation Heatmap:
         </h2>
         <p style="margin-bottom: -50px;">
@@ -252,7 +249,8 @@
             non-Hispanic black and percent non-Hispanic American Indian.
         </p>
         <p>
-            In the context of <b>median age</b>, the largest positive correlations were between percent non-Hispanic white and
+            In the context of <b>median age</b>, the largest positive correlations were between percent non-Hispanic
+            white and
             median household income, suggesting areas with older populations and with larger non-Hispanic white
             residents tend to have higher median household incomes. On the other hand, we see a negative association
             between median age and percent Hispanic, total population, and percent non-Hispanic black.
@@ -274,6 +272,28 @@
             well as how these relate to various water quality variables. In the future, it would also be interesting to
             look into additional water quality variables such as ph levels, presence of heavy metals, bacterial
             contaminations, residual chlorine, etc.
+        </p>
+    </div>
+    <div id="references" class="tabcontent">
+        <h1>References</h1>
+        <h2>Environmental Working Group</h2>
+        <p>
+            <b>Contaminants resource:</b> <a href="https://www.ewg.org/tapwater/ewg-standards.php">https://www.ewg.org/tapwater/ewg-standards.php</a>
+        </p>
+        <p>
+            <b>Tap Water Database:</b> <a href="https://www.ewg.org/tapwater">https://www.ewg.org/tapwater</a>
+        </p>
+        <h2>EWG Scraper</h2>
+        <p>
+            <b>Tool for generating CSV files from EWG website:</b> <a href="https://github.com/alberto-ai/ewg">https://github.com/alberto-ai/ewg</a>
+        </p>
+        <h2>Census Data</h2>
+        <p>
+            <b>Download CSV files:</b> <a href="https://www.census.gov/data/datasets.html">https://www.census.gov/data/datasets.html</a>
+        </p>
+        <h2>Plotly</h2>
+        <p>
+            <b>Graphing tool:</b> <a href="https://plotly.com/">https://plotly.com/</a>
         </p>
     </div>
     <script src="index.js"></script>

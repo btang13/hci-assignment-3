@@ -27,7 +27,7 @@ h1 {
 
 h2 {
     text-decoration: underline;
-    color: #1A2660; 
+    color: #1A2660;
     font-size: 36px;
     margin: 10px 50px 0px 0px;
 }
@@ -48,10 +48,10 @@ h2 {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    margin: 2%;
+    margin: 1.6%;
     font: inherit;
     font-size: 150%;
-    width: 15%;
+    width: auto;
 }
 
 .tablink:hover {
@@ -89,7 +89,7 @@ h2 {
 }
 
 .chemdrawing {
-    display:block;
+    display: block;
     margin-top: 20px;
     margin-left: 30%;
     width: 15%;
